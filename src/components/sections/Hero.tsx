@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({ activeSection }) => {
         {/* items-stretch para colunas de mesma altura */}
         <div className="grid min-h-screen grid-cols-1 items-center gap-2 md:grid-cols-2">
           {/* Coluna da Esquerda: Conteúdo */}
-          <div className="flex flex-col py-10 md:py-4 lg:py-10">
+          <div className="flex flex-col py-10 md:py-4 lg:py-6">
             <Header activeSection={activeSection} />
 
             {/* Conteúdo principal da coluna esquerda */}
@@ -67,7 +67,7 @@ const Hero: React.FC<HeroProps> = ({ activeSection }) => {
                 </div>
 
                 {/* Card da Bruna */}
-                <div className="relative mt-10 w-full md:col-span-2">
+                <div className="relative mt-10 w-full cursor-pointer md:col-span-2">
                   <div className="flex flex-col items-start gap-3 text-left transition-transform hover:scale-105">
                     {/* Imagem */}
                     <div className="w-full">

@@ -4,6 +4,7 @@ import "./App.css";
 // Importações dos componentes e do hook
 import Hero from "./components/sections/Hero";
 import { useScrollSpy } from "./hooks/useScrollSpy";
+import Banner from "./components/sections/Banner";
 
 // Componente provisório para as outras seções da página.
 const PlaceholderSection: React.FC<{ id: string; title: string }> = ({
@@ -29,7 +30,7 @@ function App() {
     <>
       <main>
         <Hero activeSection={activeSection} />
-
+        <Banner />
         {/* Seções restantes da página */}
         <PlaceholderSection id="about" title="Quem Somos" />
         <PlaceholderSection id="services" title="Serviços" />
