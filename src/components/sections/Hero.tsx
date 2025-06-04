@@ -20,11 +20,7 @@ const StatItem: React.FC<{ value: string; label: string }> = ({
   </div>
 );
 
-interface HeroProps {
-  activeSection: string;
-}
-
-const Hero: React.FC<HeroProps> = ({ activeSection }) => {
+const Hero: React.FC = () => {
   return (
     <section id="home" className="bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-4">
@@ -32,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({ activeSection }) => {
         <div className="grid min-h-screen grid-cols-1 items-center gap-2 md:grid-cols-2">
           {/* Coluna da Esquerda: Conteúdo */}
           <div className="flex flex-col py-10 md:py-4 lg:py-6">
-            <Header activeSection={activeSection} />
+            <Header />
 
             {/* Conteúdo principal da coluna esquerda */}
             <div className="mt-10 flex flex-grow flex-col gap-6">
