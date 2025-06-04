@@ -17,7 +17,7 @@ const Destinations: React.FC = () => {
       {/* Conteúdo container */}
       <div className="mx-auto max-w-7xl">
         <div className="flex justify-center">
-          <div className="flex max-w-[880px] flex-wrap justify-center gap-x-2 gap-y-4">
+          <div className="flex max-w-[880px] flex-wrap justify-center gap-x-2 gap-y-1">
             {destinationsData.map((destination, index) => {
               const marginTopClass =
                 destination.group === 1 || destination.group === 2

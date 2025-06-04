@@ -11,7 +11,7 @@ export const destinationsData = [
     imageAlt: "Paisagem de Bali, Indonésia",
     width: 280,
     height: 240,
-    group: 1, // para agrupar com Paris
+    group: 1,
   },
   {
     imageUrl: destino2,
@@ -25,7 +25,7 @@ export const destinationsData = [
     imageAlt: "Casas brancas em Santorini, Grécia",
     width: 280,
     height: 240,
-    group: 2, // para agrupar com Mumbai
+    group: 2,
   },
   {
     imageUrl: destino4,
