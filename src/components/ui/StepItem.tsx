@@ -24,7 +24,7 @@ const StepItem = ({ title }: StepItemProps) => {
 
       <button
         onClick={handleToggle}
-        className="text-sm font-semibold text-[#232323] hover:underline"
+        className="text-sm font-semibold text-[#232323] transition-transform duration-300 hover:scale-105 hover:transform hover:underline"
       >
         {showDescription ? "- Fechar" : "+ Leia mais"}
       </button>
