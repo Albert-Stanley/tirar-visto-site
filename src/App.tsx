@@ -4,6 +4,8 @@ import Banner from "./components/sections/Banner";
 import Steps from "./components/sections/Steps";
 import Destination from "./components/sections/Destination";
 import Packages from "./components/sections/Packages";
+import Footer from "./components/sections/Footer";
+import ScrollToTopButton from "./components/ui/ScrollToTopButton";
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
         <Steps />
         <Destination />
         <Packages />
+        <Footer />
       </main>
+      <ScrollToTopButton />
     </>
   );
 }
