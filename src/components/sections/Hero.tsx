@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import Header from "../layout/Header";
-import brunaVideo from "../../assets/images/bruna-video.png";
+import brunaVideo from "../../assets/images/bruna-video.svg";
 import heroRodaGigante from "../../assets/images/hero-roda-gigante.svg";
 import setaDireita from "../../assets/icons/seta-direita.svg";
 
@@ -22,7 +22,7 @@ const StatItem: React.FC<{ value: string; label: string }> = ({
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="bg-white">
+    <section className="bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-4">
         {/* items-stretch para colunas de mesma altura */}
         <div className="grid min-h-screen grid-cols-1 items-center gap-2 md:grid-cols-2">

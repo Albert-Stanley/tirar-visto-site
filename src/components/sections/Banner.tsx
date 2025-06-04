@@ -1,9 +1,9 @@
 import telefone from "../../assets/icons/telefone-icon.svg";
 import relogio from "../../assets/icons/relogio-icon.svg";
 
-export default function Banner() {
+const Banner: React.FC = () => {
   return (
-    <section className="mt-6 bg-[#F7F7F7] px-4 py-16 text-[#232323]">
+    <section className="mt-6 bg-[#F7F7F7] px-4 py-6 text-[#232323]">
       <div className="mx-auto flex max-w-screen-xl flex-col gap-6">
         {/* Primeira linha */}
         <div className="flex flex-col md:flex-row">
@@ -45,4 +45,6 @@ export default function Banner() {
       </div>
     </section>
   );
-}
+};
+
+export default Banner;

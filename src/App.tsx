@@ -1,8 +1,7 @@
 import "./App.css";
-
-// Importações dos componentes e do hook
 import Hero from "./components/sections/Hero";
 import Banner from "./components/sections/Banner";
+import Steps from "./components/sections/Steps";
 
 function App() {
   return (
@@ -10,6 +9,7 @@ function App() {
       <main>
         <Hero />
         <Banner />
+        <Steps />
       </main>
     </>
   );
