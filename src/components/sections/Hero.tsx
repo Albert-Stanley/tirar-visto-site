@@ -27,11 +27,11 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ activeSection }) => {
   return (
     <section id="home" className="bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-4">
         {/* items-stretch para colunas de mesma altura */}
-        <div className="grid min-h-screen grid-cols-1 items-center gap-12 md:grid-cols-2">
+        <div className="grid min-h-screen grid-cols-1 items-center gap-2 md:grid-cols-2">
           {/* Coluna da Esquerda: Conteúdo */}
-          <div className="flex flex-col py-10 md:py-16 lg:py-20">
+          <div className="flex flex-col py-10 md:py-4 lg:py-10">
             <Header activeSection={activeSection} />
 
             {/* Conteúdo principal da coluna esquerda */}
@@ -110,20 +110,20 @@ const Hero: React.FC<HeroProps> = ({ activeSection }) => {
           </div>
 
           {/* Coluna da Direita: Imagem com Overlay */}
-          <div className="relative mx-auto mt-4 h-auto w-full max-w-[360px] md:h-[800px] md:w-[700px]">
+          <div className="relative mx-auto mt-4 w-[90%] max-w-[280px] sm:max-w-[320px] md:h-[800px] md:max-w-[700px]">
             <img
               src={heroRodaGigante}
               alt="Roda gigante ao entardecer com iluminação, simbolizando a realização de sonhos de viagem"
-              className="absolute inset-0 h-full w-full rounded-2xl object-cover"
+              className="h-auto w-full rounded-2xl object-cover md:h-full"
             />
 
             {/* Conteúdo sobreposto na imagem */}
-            <div className="absolute inset-0 flex flex-col justify-between p-6 md:p-8">
+            <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-6 md:p-8">
               {/* Botão "Tirar meu visto agora!" no topo direito */}
               <div className="flex justify-end">
                 <a
                   href="#contact"
-                  className="rounded-lg bg-[#F6C010] px-6 py-3 text-sm font-semibold text-[#282828] shadow-md transition hover:bg-yellow-300 hover:shadow-lg"
+                  className="rounded-4xl bg-[#F6C010] px-4 py-2 text-xs font-semibold text-[#282828] shadow-md transition hover:bg-yellow-300 hover:shadow-lg sm:px-5 sm:py-3 sm:text-sm"
                 >
                   Tirar meu visto agora!
                 </a>
@@ -132,13 +132,13 @@ const Hero: React.FC<HeroProps> = ({ activeSection }) => {
               {/* Texto sobreposto na parte inferior */}
               <div className="mt-auto text-left">
                 <h3
-                  className="text-4xl font-bold text-white drop-shadow-lg filter"
+                  className="text-2xl font-semibold text-white drop-shadow-lg sm:text-3xl md:text-4xl"
                   style={{ textShadow: "0px 2px 6px rgba(0, 0, 0, 0.7)" }}
                 >
                   Realize o seu sonho com a ajuda da Tirar Visto!
                 </h3>
                 <p
-                  className="mt-3 max-w-md text-gray-100 drop-shadow-md filter"
+                  className="mt-2 max-w-md text-sm font-normal text-white drop-shadow-md sm:mt-3 sm:text-base"
                   style={{ textShadow: "0px 1px 4px rgba(0, 0, 0, 0.7)" }}
                 >
                   Com um serviço profissional, você não terá dor de cabeça

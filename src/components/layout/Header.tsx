@@ -21,11 +21,9 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
 
   // Função para gerar as classes do link, aplicando um sublinhado se a seção estiver ativa.
   const getLinkClass = (id: string) => `
-    relative py-2 text-md font-medium text-[#232323] transition-colors hover:font-bold
-    after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full
-    after:bg-blue-600 after:transition-transform after:duration-300
-    ${activeSection === id ? "after:scale-x-100" : "after:scale-x-0"}
-  `;
+  py-2 text-md transition-colors hover:font-bold
+  ${activeSection === id ? "font-bold text-[#232323]" : "font-medium text-[#232323]"}
+`;
 
   return (
     // O container principal do header. 'justify-between' alinha a logo à esquerda e o menu à direita.
